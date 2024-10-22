@@ -46,17 +46,6 @@ router.get('/refrigerantes', (req, res) => {
   });
 });
 
-// Rota para listar produtos do tipo "Suco"
-router.get('/sucos', (req, res) => {
-  db.query('SELECT * FROM produtos WHERE tipo = "Suco"', (err, results) => {
-    if (err) {
-      console.error('Erro na consulta ao banco de dados:', err);
-      return res.status(500).json({ error: 'Erro interno do servidor' });
-    }
-    return res.json(results);
-  });
-});
-
 // Rota da SearchBar
 router.get('/pesquisa', (req, res) => {
   const query = req.query.q;

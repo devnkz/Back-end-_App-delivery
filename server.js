@@ -1,7 +1,6 @@
 
 const express = require('express');
 const db = require('./config/db')
-const routeUser = require('./routes/auth')
 const routeProduto = require('./routes/produtoRoutes')
 require('dotenv').config();
 
@@ -10,8 +9,6 @@ const app = express();
 app.use(express.json());
 
 //rotas
-
-app.use('/api/auth', routeUser);
 app.use('/api/produtoRoutes', routeProduto);
 
 
@@ -20,7 +17,7 @@ app.get('/', (req, res) => {
   return res.json({ mensagem: 'Nossa API está funcionando' });
 });
 
-const port = 3000;
+const port = 3333;
 
 // Inicie o servidor Express
 app.listen(port, () => {

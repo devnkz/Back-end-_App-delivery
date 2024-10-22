@@ -4,7 +4,7 @@ const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: 'pel4n1ck',
-    database: 'appdb'
+    database: 'db_adega'
 });
 
 // Conecte-se ao banco de dados
