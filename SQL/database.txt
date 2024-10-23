@@ -1,0 +1,29 @@
+create database db_adega;
+
+create table produtos(
+	id_produto int auto_increment primary key,
+    nome varchar(50) not null,
+    tipo varchar(50) not null,
+    modelo varchar(50) not null,
+	tamanho varchar(50) not null,
+    quantidade int  not null,
+    img_url varchar(500) not null
+);
+
+insert into Produtos(nome, tipo, modelo, tamanho,quantidade,img_url)
+values
+('Skol', 'Cerveja', 'lata', '350ml', 12, 'https://mercantilatacado.vtexassets.com/arquivos/ids/168529/65391b486a2a15a1bb6c1b6c.jpg?v=638338381591030000'),
+('Brahma', 'Cerveja', 'lata', '350ml', 12, 'https://choppbrahmaexpress.vtexassets.com/arquivos/ids/155702/brahma-lata-350ml.jpg?v=637353454674430000'),
+('Antarctica', 'Cerveja', 'lata', '350ml', 12, 'https://superprix.vteximg.com.br/arquivos/ids/203446-600-600/c454bdddf0555a849c10cba877f643c9_cerveja-antarctica-350ml--lata-_lett_1.jpg?v=637695793852830000'),
+('Heineken', 'Cerveja', 'Long neck', '475ml', 12, 'https://covabra.vtexassets.com/arquivos/ids/158652/61041.jpg?v=638095898061530000'),
+('Coca-cola', 'Refrigerante', 'Garrafa', '600ml', 12, 'https://www.imigrantesbebidas.com.br/bebida/images/products/full/1844-refrigerante-coca-cola-600ml.jpg'),
+('Fanta Laranja', 'Refrigerante', 'Garrafa', '2 litros', 12, 'https://coopsp.vtexassets.com/arquivos/ids/215362-800-auto?v=637919527220430000&width=800&height=auto&aspect=true'),
+('Pepsi', 'Refrigerante', 'lata', '350ml', 12, 'https://static.paodeacucar.com/img/uploads/1/658/26944658.jpg'),
+('Turbaína', 'Refrigerante', 'Garrafa', '2 litros', 12, 'https://boa.vtexassets.com/arquivos/ids/527298/Refrigerante-Turbaina-Ferraspari-Garrafa-2L.jpg?v=638478380954800000'),
+('Red-Label', 'Whisky', 'Garrafa', '1 litro', 12, 'https://images.tcdn.com.br/img/img_prod/1080087/whisky_johnnie_walker_red_label_escoces_1l_2013189_1_6f436ba74afe27be9c6a3316a83213d3.jpg'),
+('Ballantines', 'Whisky', 'Garrafa', '1 litro', 12, 'https://dcdn.mitiendanube.com/stores/002/905/426/products/whisky-ballantines-finest-1l-796f9c23318d9114d016970369751315-480-0.jpg'),
+('Jack Daniels', 'Whisky', 'Garrafa', '1 litro', 12, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6nMq4sPERqljFbdvSsYA3hjiep3y5epG3VA&s'),
+('White Horse', 'Whisky', 'Garrafa', '1 litro', 12, 'https://m.media-amazon.com/images/I/51VHnK8ONqL.jpg');
+
+
+select * from produtos;
